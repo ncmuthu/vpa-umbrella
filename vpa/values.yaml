@@ -1,0 +1,13 @@
+vpa:
+  recommender:
+    resources:
+      requests:
+        cpu: 100m
+        memory: 500Mi
+    extraArgs:
+      kube-api-qps: 20
+      kube-api-burst: 50
+      checkpoints-gc-interval: 24h0m0s
+
+  metrics-server:
+    enabled: true
