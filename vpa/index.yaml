@@ -1,0 +1,40 @@
+apiVersion: v1
+entries:
+  vpa:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-03-13T15:06:45.09269Z"
+    dependencies:
+    - alias: metrics-server
+      condition: metrics-server.enabled
+      name: metrics-server
+      repository: https://kubernetes-sigs.github.io/metrics-server/
+      version: 3.11.0
+    description: A Helm chart for Kubernetes Vertical Pod Autoscaler
+    digest: c2aff4c67807d17c8e788f4d5b100ae412bb17c4e1a74d2f3cf0ac8a307a5076
+    home: https://github.com/FairwindsOps/charts/tree/master/stable/vpa
+    kubeVersion: '>= 1.24.0-0'
+    maintainers:
+    - name: sudermanjr
+    name: vpa
+    sources:
+    - https://github.com/FairwindsOps/charts/tree/master/stable/vpa
+    - https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/ncmuthu/vpa-umbrella/main/charts/vpa-4.7.1.tgz
+    version: 4.7.1
+  - apiVersion: v2
+    created: "2025-03-13T15:06:45.089798Z"
+    dependencies:
+    - name: vpa
+      repository: https://charts.fairwinds.com/stable
+      version: 4.7.1
+    description: A Helm chart for Kubernetes
+    digest: d3b7f2899afbe260f272cfc30398d3b376fb8c6e35e9d44de681eaaff2ed44ef
+    name: vpa
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/ncmuthu/vpa-umbrella/main/vpa-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-03-13T15:06:45.086171Z"
