@@ -3,7 +3,7 @@ entries:
   vpa:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-03-13T15:06:45.09269Z"
+    created: "2025-03-13T15:08:50.548017Z"
     dependencies:
     - alias: metrics-server
       condition: metrics-server.enabled
@@ -22,10 +22,10 @@ entries:
     - https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler
     type: application
     urls:
-    - https://raw.githubusercontent.com/ncmuthu/vpa-umbrella/main/charts/vpa-4.7.1.tgz
+    - https://raw.githubusercontent.com/ncmuthu/vpa-umbrella/main/vpa/charts/vpa-4.7.1.tgz
     version: 4.7.1
   - apiVersion: v2
-    created: "2025-03-13T15:06:45.089798Z"
+    created: "2025-03-13T15:08:50.546372Z"
     dependencies:
     - name: vpa
       repository: https://charts.fairwinds.com/stable
@@ -35,6 +35,6 @@ entries:
     name: vpa
     type: application
     urls:
-    - https://raw.githubusercontent.com/ncmuthu/vpa-umbrella/main/vpa-0.1.0.tgz
+    - https://raw.githubusercontent.com/ncmuthu/vpa-umbrella/main/vpa/vpa-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-13T15:06:45.086171Z"
+generated: "2025-03-13T15:08:50.540739Z"
